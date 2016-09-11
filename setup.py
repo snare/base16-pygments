@@ -1,0 +1,48 @@
+from setuptools import setup
+
+setup(
+    name="base16_pygments",
+    version="0.1",
+    author="Jan T. Sott",
+    author_email="",
+    description="Pygments styles based on Chris Kempson's Base16 colour scheme",
+    license="MIT",
+    keywords="base16 color pygments style",
+    url="https://github.com/idleberg/base16-pygments",
+    packages=['base16_pygments'],
+    install_requires='pygments',
+    entry_points={
+        'pygments.styles': [
+            'base16_3024_dark = base16_pygments.base16_3024_dark:base16_3024_dark',
+            'base16_3024_light = base16_pygments.base16_3024_light:base16_3024_light',
+            'base16_applepips_dark = base16_pygments.base16_applepips_dark:base16_applepips_dark',
+            'base16_applepips_light = base16_pygments.base16_applepips_light:base16_applepips_light',
+            'base16_chalk_dark = base16_pygments.base16_chalk_dark:base16_chalk_dark',
+            'base16_chalk_light = base16_pygments.base16_chalk_light:base16_chalk_light',
+            'base16_default_dark = base16_pygments.base16_default_dark:base16_default_dark',
+            'base16_default_light = base16_pygments.base16_default_light:base16_default_light',
+            'base16_eighties_dark = base16_pygments.base16_eighties_dark:base16_eighties_dark',
+            'base16_eighties_light = base16_pygments.base16_eighties_light:base16_eighties_light',
+            'base16_greenscreen_dark = base16_pygments.base16_greenscreen_dark:base16_greenscreen_dark',
+            'base16_greenscreen_light = base16_pygments.base16_greenscreen_light:base16_greenscreen_light',
+            'base16_harper_dark = base16_pygments.base16_harper_dark:base16_harper_dark',
+            'base16_kimbie_dark = base16_pygments.base16_kimbie_dark:base16_kimbie_dark',
+            'base16_kimbie_light = base16_pygments.base16_kimbie_light:base16_kimbie_light',
+            'base16_londontube_light = base16_pygments.base16_londontube_light:base16_londontube_light',
+            'base16_mocha_dark = base16_pygments.base16_mocha_dark:base16_mocha_dark',
+            'base16_mocha_light = base16_pygments.base16_mocha_light:base16_mocha_light',
+            'base16_monokai_dark = base16_pygments.base16_monokai_dark:base16_monokai_dark',
+            'base16_monokai_light = base16_pygments.base16_monokai_light:base16_monokai_light',
+            'base16_ocean_dark = base16_pygments.base16_ocean_dark:base16_ocean_dark',
+            'base16_ocean_light = base16_pygments.base16_ocean_light:base16_ocean_light',
+            'base16_paraiso_dark = base16_pygments.base16_paraiso_dark:base16_paraiso_dark',
+            'base16_paraiso_light = base16_pygments.base16_paraiso_light:base16_paraiso_light',
+            'base16_railscasts_dark = base16_pygments.base16_railscasts_dark:base16_railscasts_dark',
+            'base16_railscasts_light = base16_pygments.base16_railscasts_light:base16_railscasts_light',
+            'base16_solarized_dark = base16_pygments.base16_solarized_dark:base16_solarized_dark',
+            'base16_solarized_light = base16_pygments.base16_solarized_light:base16_solarized_light',
+            'base16_tomorrow_dark = base16_pygments.base16_tomorrow_dark:base16_tomorrow_dark',
+            'base16_tomorrow_light = base16_pygments.base16_tomorrow_light:base16_tomorrow_light',
+        ]
+    }
+)
